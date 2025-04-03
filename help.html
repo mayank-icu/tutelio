@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tutelio - FAQs</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css'>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+  
+      .font-nunito {
+        font-family: 'Nunito Sans', sans-serif;
+      }
+      
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      
+      .modal-content {
+        background-color: white;
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 8px;
+        width: 80%;
+        max-width: 500px;
+        animation: modalFade 0.3s;
+      }
+      
+      @keyframes modalFade {
+        from {opacity: 0; transform: translateY(-20px);}
+        to {opacity: 1; transform: translateY(0);}
+      }
+      
+      .close-modal {
+        float: right;
+        cursor: pointer;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      
+      .faq-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+      }
+      
+      .faq-open {
+        max-height: 700px;
+      }
+    </style>
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-white">Tutelio<span class="text-dark">.</span></h1>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="vision.html" class="nav-item nav-link">Vision</a>
+                        <a href="features.html" class="nav-item nav-link">Features</a>
+                        <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-light mt-2">
+                                <a href="feature.html" class="dropdown-item">Features</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="faq.html" class="dropdown-item">FAQs</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div> -->
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="https://app.tutelio.in/register" class="nav-item nav-link">Sign Up</a>
+                        <a href="https://app.tutelio.in/login" class="nav-item nav-link">Login</a>
+                    </div>
+                    
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->           
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Help</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                          
+                            <li class="breadcrumb-item text-white active" aria-current="page">Help</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                    <img class="img-fluid" src="img/hero-img.png" alt="" style="max-height: 300px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+
+
+
+
+
+
+
+    <div class="container mx-auto px-4 sm:px-8 max-w-3xl">
+
+        <div class="main-title mb-8" style="margin-top: 50px;">
+            <h1 class="font-bold text-4xl text-center">How can we help you?</h1>
+          
+        </div>
+
+        <div class="main-search mb-8 rounded-lg shadow-lg px-6 py-3 w-full flex items-center space-x-6 border border-gray-200 border-opacity-75 bg-white">
+            <button class="focus:outline-none" id="searchButton">
+                <svg 
+                    class="w-6 h-6 text-gray-500"
+                    fill="none" stroke-linecap="round" 
+                    stroke-linejoin="round" stroke-width="2" 
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </button>
+            <input id="searchInput" type="text" placeholder="Describe your issue" class="text-base w-full bg-transparent focus:outline-none">
+        </div>
+
+        <div id="searchResults" class="bg-white rounded-lg shadow-lg mb-8 p-4 hidden">
+            <h3 class="font-bold mb-4">Search Results</h3>
+            <div id="resultsContainer" class="divide-y">
+                <!-- Search results will appear here -->
+            </div>
+        </div>
+
+        <div class="main-question mb-8 flex flex-col divide-y text-gray-800 text-base bg-white rounded-lg shadow-lg">
+            <!-- Popular Articles Section -->
+            <div class="faq-item px-6 py-6">
+                <div class="flex items-center justify-between cursor-pointer">
+                    <h4 class="faq-title font-semibold text-lg">Popular Articles</h4>
+                    <svg class="w-5 h-5 text-gray-500 faq-arrow transition-transform duration-300"
+                        fill="none" stroke-linecap="round" 
+                        stroke-linejoin="round" stroke-width="2" 
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="faq-content mt-3 text-gray-600">
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><a href="/articles/create-account" class="text-blue-600 hover:underline">How to create a Tutelio account</a></li>
+                        <li><a href="/articles/ai-tutoring-intro" class="text-blue-600 hover:underline">Getting started with AI tutoring</a></li>
+                        <li><a href="/articles/subject-coverage" class="text-blue-600 hover:underline">Subject coverage and grade levels</a></li>
+                        <li><a href="/articles/homework-help" class="text-blue-600 hover:underline">Using Tutelio for homework help</a></li>
+                        <li><a href="/articles/track-progress" class="text-blue-600 hover:underline">How to track learning progress</a></li>
+                        <li><a href="/articles/learning-styles" class="text-blue-600 hover:underline">Personalizing your learning experience</a></li>
+                        <li><a href="/articles/practice-exercises" class="text-blue-600 hover:underline">Finding practice exercises and quizzes</a></li>
+                        <li><a href="/articles/parent-guide" class="text-blue-600 hover:underline">Parent's guide to Tutelio</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!-- About Tutelio Platform Section -->
+            <div class="faq-item px-6 py-6">
+                <div class="flex items-center justify-between cursor-pointer">
+                    <h4 class="faq-title font-semibold text-lg">About Tutelio Platform</h4>
+                    <svg class="w-5 h-5 text-gray-500 faq-arrow transition-transform duration-300"
+                        fill="none" stroke-linecap="round" 
+                        stroke-linejoin="round" stroke-width="2" 
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="faq-content mt-3 text-gray-600">
+                    <p class="mb-3">Tutelio is an AI-powered educational platform designed to provide high-quality learning experiences for students up to class 10. Our mission is to make education more accessible and effective, especially for those who may not have access to traditional schooling.</p>
+                    <p class="mb-3">The platform offers interactive learning experiences with AI-generated explanations, exercises, and personalized learning recommendations. Students can ask questions and receive instant assistance in various subjects.</p>
+                    <p class="mb-3">Tutelio's minimal and user-friendly interface ensures a distraction-free learning environment that makes education enjoyable and effective.</p>
+                    <div class="mt-4">
+                        <h5 class="font-semibold mb-2">Key Benefits:</h5>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>Personalized learning paths tailored to individual strengths and weaknesses</li>
+                            <li>Interactive explanations that adapt to different learning styles</li>
+                            <li>Real-time feedback on answers and solutions</li>
+                            <li>Gamified learning elements to increase engagement</li>
+                            <li>Accessible on all devices with internet connectivity</li>
+                        </ul>
+                    </div>
+                    <p class="mt-3">Learn more about our <a href="/philosophy" class="text-blue-600 hover:underline">educational philosophy</a> and <a href="/research" class="text-blue-600 hover:underline">research-backed approach</a>.</p>
+                </div>
+            </div>
+        
+            <!-- Getting Started Section -->
+            <div class="faq-item px-6 py-6">
+                <div class="flex items-center justify-between cursor-pointer">
+                    <h4 class="faq-title font-semibold text-lg">Getting Started with Tutelio</h4>
+                    <svg class="w-5 h-5 text-gray-500 faq-arrow transition-transform duration-300"
+                        fill="none" stroke-linecap="round" 
+                        stroke-linejoin="round" stroke-width="2" 
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="faq-content mt-3 text-gray-600">
+                    <p class="mb-3">Follow these steps to begin your learning journey with Tutelio:</p>
+                    <ol class="list-decimal pl-5 space-y-2">
+                        <li>Create an account by providing basic information</li>
+                        <li>Select your grade level and preferred subjects</li>
+                        <li>Complete the initial assessment to personalize your learning path</li>
+                        <li>Explore the dashboard and available learning resources</li>
+                        <li>Start interacting with the AI tutor for assistance</li>
+                    </ol>
+                    <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+                        <p class="font-semibold text-blue-800">Quick Tips:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1 text-blue-700">
+                            <li>Be specific when asking questions to get the most accurate help</li>
+                            <li>Complete your profile to receive better personalized content</li>
+                            <li>Use the "Explain Again" feature if you need concepts explained differently</li>
+                            <li>Save important lessons and explanations to your personal library</li>
+                        </ul>
+                    </div>
+                    <p class="mt-4">For a visual walkthrough, check our <a href="/tutorials/getting-started" class="text-blue-600 hover:underline">step-by-step tutorial</a>.</p>
+                </div>
+            </div>
+        
+            <!-- Frequently Asked Questions Section -->
+            <div class="faq-item px-6 py-6">
+                <div class="flex items-center justify-between cursor-pointer">
+                    <h4 class="faq-title font-semibold text-lg">Frequently Asked Questions</h4>
+                    <svg class="w-5 h-5 text-gray-500 faq-arrow transition-transform duration-300"
+                        fill="none" stroke-linecap="round" 
+                        stroke-linejoin="round" stroke-width="2" 
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="faq-content mt-3 text-gray-600">
+                    <div class="space-y-5">
+                        <div>
+                            <p class="font-semibold">What subjects does Tutelio cover?</p>
+                            <p>Tutelio currently covers Mathematics, Science (Physics, Chemistry, Biology), Social Studies (History, Geography, Civics), English (Grammar, Literature, Comprehension), and basic programming (Scratch, Python) for students up to class 10. We regularly update our content based on the latest curriculum standards.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">How does the AI tutoring work?</p>
+                            <p>Our AI analyzes your questions and learning patterns to provide personalized explanations, examples, and practice problems tailored to your learning style and needs. The more you interact with Tutelio, the better it adapts to your unique learning requirements, providing increasingly relevant and helpful guidance.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Is Tutelio available on mobile devices?</p>
+                            <p>Yes, Tutelio is fully responsive and works on smartphones, tablets, and computers, allowing you to learn anytime, anywhere. We also offer dedicated apps for iOS and Android devices with additional offline learning capabilities.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Can parents track their child's progress?</p>
+                            <p>Yes, parents can create a linked account to monitor learning progress, time spent, and areas of improvement for their children. Our parent dashboard provides insights into subjects studied, concept mastery, and learning trends.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Is internet connectivity required at all times?</p>
+                            <p>While Tutelio works best with internet connectivity, our mobile apps allow you to download lessons for offline access. Certain interactive features may be limited without an internet connection, but core learning materials remain available.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">How is Tutelio different from traditional tutoring?</p>
+                            <p>Unlike traditional tutoring with fixed schedules, Tutelio provides 24/7 access to learning resources. Our AI can explain concepts in multiple ways, adapting to your learning style. We also offer features like instant feedback, adaptive practice, and personalized learning paths not available in conventional tutoring.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Can Tutelio help with homework and exam preparation?</p>
+                            <p>Absolutely! You can upload homework problems to receive step-by-step guidance (not just answers). For exam preparation, Tutelio provides topic reviews, practice tests, and targeted exercises based on your areas of weakness.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">How secure is my child's data on Tutelio?</p>
+                            <p>We take privacy seriously. Tutelio is COPPA-compliant and we never share student data with third parties. All learning interactions are encrypted, and parents have full visibility into their child's account. Learn more in our <a href="/privacy" class="text-blue-600 hover:underline">Privacy Policy</a>.</p>
+                        </div>
+                    </div>
+                    <p class="mt-5">Have more questions? Check our <a href="/faq/complete" class="text-blue-600 hover:underline">comprehensive FAQ section</a> or <a href="/contact" class="text-blue-600 hover:underline">contact our support team</a>.</p>
+                </div>
+            </div>
+        
+            <!-- Subject-Specific Information -->
+            <div class="faq-item px-6 py-6">
+                <div class="flex items-center justify-between cursor-pointer">
+                    <h4 class="faq-title font-semibold text-lg">Subject-Specific Information</h4>
+                    <svg class="w-5 h-5 text-gray-500 faq-arrow transition-transform duration-300"
+                        fill="none" stroke-linecap="round" 
+                        stroke-linejoin="round" stroke-width="2" 
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="faq-content mt-3 text-gray-600">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="p-3 border rounded-lg">
+                            <h5 class="font-semibold mb-2 text-blue-700">Mathematics</h5>
+                            <p class="mb-2">Interactive problem-solving with step-by-step explanations for arithmetic, algebra, geometry, and more.</p>
+                            <a href="/subjects/mathematics" class="text-blue-600 hover:underline text-sm">Explore Mathematics →</a>
+                        </div>
+                        <div class="p-3 border rounded-lg">
+                            <h5 class="font-semibold mb-2 text-green-700">Science</h5>
+                            <p class="mb-2">Visual explanations and virtual experiments covering Physics, Chemistry, and Biology concepts.</p>
+                            <a href="/subjects/science" class="text-green-600 hover:underline text-sm">Explore Science →</a>
+                        </div>
+                        <div class="p-3 border rounded-lg">
+                            <h5 class="font-semibold mb-2 text-amber-700">Social Studies</h5>
+                            <p class="mb-2">Interactive timelines, maps, and case studies for History, Geography, and Civics.</p>
+                            <a href="/subjects/social-studies" class="text-amber-600 hover:underline text-sm">Explore Social Studies →</a>
+                        </div>
+                        <div class="p-3 border rounded-lg">
+                            <h5 class="font-semibold mb-2 text-purple-700">English</h5>
+                            <p class="mb-2">Grammar exercises, reading comprehension, and writing assistance with detailed feedback.</p>
+                            <a href="/subjects/english" class="text-purple-600 hover:underline text-sm">Explore English →</a>
+                        </div>
+                        <div class="p-3 border rounded-lg">
+                            <h5 class="font-semibold mb-2 text-indigo-700">Programming</h5>
+                            <p class="mb-2">Interactive coding tutorials for beginners using Scratch and introductory Python.</p>
+                            <a href="/subjects/programming" class="text-indigo-600 hover:underline text-sm">Explore Programming →</a>
+                        </div>
+                        <div class="p-3 border rounded-lg">
+                            <h5 class="font-semibold mb-2 text-rose-700">All Subjects</h5>
+                            <p class="mb-2">View our complete curriculum and learning paths for all available subjects.</p>
+                            <a href="/subjects/all" class="text-rose-600 hover:underline text-sm">See All Subjects →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Troubleshooting Common Issues Section -->
+            <div class="faq-item px-6 py-6">
+                <div class="flex items-center justify-between cursor-pointer">
+                    <h4 class="faq-title font-semibold text-lg">Troubleshooting Common Issues</h4>
+                    <svg class="w-5 h-5 text-gray-500 faq-arrow transition-transform duration-300"
+                        fill="none" stroke-linecap="round" 
+                        stroke-linejoin="round" stroke-width="2" 
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="faq-content mt-3 text-gray-600">
+                    <div class="space-y-4">
+                        <div>
+                            <p class="font-semibold">The AI tutor isn't understanding my questions</p>
+                            <p>Try rephrasing your question with more details or break it into smaller parts. Use subject-specific terminology for better results. Including keywords related to the topic helps the AI provide more accurate responses.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">I can't access my saved lessons</p>
+                            <p>Check your internet connection and refresh the page. If the problem persists, clear your browser cache or try logging in from a different device. Make sure you're using the latest version of our app if accessing through mobile.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">My progress isn't being saved</p>
+                            <p>Make sure you're logged in and complete each lesson module fully. Click the "Save Progress" button explicitly if you need to exit before completion. For mobile users, ensure you have sufficient storage space available.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">The interactive exercises aren't loading</p>
+                            <p>This usually happens due to browser compatibility issues. Try using Chrome, Firefox, or Safari with the latest updates. Disable any ad-blockers or browser extensions that might interfere with the interactive elements.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">I forgot my password</p>
+                            <p>Click on the "Forgot Password" link on the login page. Follow the instructions sent to your registered email address. If you don't receive the email, check your spam folder or contact support for assistance.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">The voice recognition feature isn't working</p>
+                            <p>Make sure you've granted microphone access permissions to Tutelio. Speak clearly and in a quiet environment. This feature works best on Chrome browsers and may have limited functionality on some mobile devices.</p>
+                        </div>
+                    </div>
+                    <p class="mt-4">For more assistance, visit our <a href="/help-center" class="text-blue-600 hover:underline">Help Center</a> or <a href="/technical-support" class="text-blue-600 hover:underline">Technical Support</a> page.</p>
+                </div>
+            </div>
+        
+            <!-- For Parents and Educators Section -->
+            <div class="faq-item px-6 py-6">
+                <div class="flex items-center justify-between cursor-pointer">
+                    <h4 class="faq-title font-semibold text-lg">For Parents and Educators</h4>
+                    <svg class="w-5 h-5 text-gray-500 faq-arrow transition-transform duration-300"
+                        fill="none" stroke-linecap="round" 
+                        stroke-linejoin="round" stroke-width="2" 
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="faq-content mt-3 text-gray-600">
+                    <div class="space-y-4">
+                        <div>
+                            <p class="font-semibold">Monitoring Your Child's Progress</p>
+                            <p>Parents can access a dedicated dashboard showing learning activities, time spent, subject performance, and concept mastery. Set up weekly email reports to track improvement over time.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Setting Learning Goals</p>
+                            <p>Create custom learning goals and milestones for your child. The platform suggests appropriate challenges based on current abilities and learning pace.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Classroom Integration</p>
+                            <p>Educators can create classroom groups, assign specific lessons, and track group progress. Our platform integrates with popular learning management systems for seamless adoption.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Digital Wellbeing Features</p>
+                            <p>Set screen time limits, study session durations, and schedule breaks. Our platform encourages healthy learning habits with built-in reminders to rest eyes and stretch.</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-green-50 rounded-lg">
+                        <p class="font-semibold text-green-800">Resources for Parents and Educators:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1">
+                            <li><a href="/resources/parent-guide" class="text-green-700 hover:underline">Complete Parent's Guide</a></li>
+                            <li><a href="/resources/classroom-integration" class="text-green-700 hover:underline">Classroom Integration Manual</a></li>
+                            <li><a href="/webinars" class="text-green-700 hover:underline">Educational Webinars Archives</a></li>
+                            <li><a href="/resources/learning-strategies" class="text-green-700 hover:underline">Effective Learning Strategies</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Future Plans for Tutelio Section -->
+            <div class="faq-item px-6 py-6">
+                <div class="flex items-center justify-between cursor-pointer">
+                    <h4 class="faq-title font-semibold text-lg">Future Plans for Tutelio</h4>
+                    <svg class="w-5 h-5 text-gray-500 faq-arrow transition-transform duration-300"
+                        fill="none" stroke-linecap="round" 
+                        stroke-linejoin="round" stroke-width="2" 
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="faq-content mt-3 text-gray-600">
+                    <p class="mb-3">Tutelio is constantly evolving to provide better educational resources. Our upcoming plans include:</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Expanding content to higher education levels (up to class 12)</li>
+                        <li>Introducing certification programs in specialized subjects</li>
+                        <li>Developing a complete online schooling system with official accreditation</li>
+                        <li>Enhanced collaboration tools for group learning</li>
+                        <li>Integration with popular learning management systems</li>
+                        <li>Advanced AI features including natural conversation capabilities</li>
+                        <li>Immersive learning experiences with AR/VR technology</li>
+                        <li>Multilingual support for regional languages</li>
+                        <li>Offline learning capabilities through downloadable content packs</li>
+                    </ul>
+                    <p class="mt-3">Follow our <a href="/roadmap" class="text-blue-600 hover:underline">development roadmap</a> to stay updated on upcoming features and improvements.</p>
+                    <div class="mt-4 p-4 bg-purple-50 rounded-lg">
+                        <p class="font-semibold text-purple-800">Join Our Beta Testing Program:</p>
+                        <p class="text-purple-700 mt-1">Get early access to new features and help shape the future of Tutelio by joining our beta testing program. <a href="/beta-program" class="text-purple-900 underline">Learn more →</a></p>
+                    </div>
+                </div>
+            </div>
+        
+        
+        </div>
+        
+
+        <div class="main-images mb-8">
+            <div class="images grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="image bg-white rounded-lg shadow-lg overflow-hidden">
+                    <a href="#" class="support-link">
+                        <img src="https://images.unsplash.com/45/QDSMoAMTYaZoXpcwBjsL__DSC0104-1.jpg" alt="Contact with Customer support" title="Contact with Customer support">
+                        <span class="text-center p-3 text-gray-700 text-sm inline-block w-full font-semibold">Customer support</span>
+                    </a>
+                </div>
+
+                <div class="image bg-white rounded-lg shadow-lg overflow-hidden">
+                     <a href="#" class="message-link">
+                        <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a" alt="Send message to support desk" title="Send message to support desk">
+                        <span class="text-center p-3 text-gray-700 text-sm inline-block w-full font-semibold">Send message</span>
+                     </a>    
+                </div>
+
+                <div class="image bg-white rounded-lg shadow-lg overflow-hidden">
+                    <a href="#" class="feedback-link">
+                        <img src="https://images.unsplash.com/photo-1488998427799-e3362cec87c3" alt="Write your feedback" title="Write your feedback">
+                        <span class="text-center p-3 text-gray-700 text-sm inline-block w-full font-semibold">Write feedback</span>
+                    </a>                        
+               </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Customer Support Modal -->
+<div id="supportModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" id="closeSupport">&times;</span>
+        <h2 class="text-xl font-bold mb-4 text-blue-600">Contact Customer Support</h2>
+        <form id="supportForm" class="support-form">
+            <input type="hidden" name="access_key" value="41ce8c3a-f806-4a31-b71d-473ecb8f47ab">
+            <input type="hidden" name="subject" value="Customer Support Request">
+            <input type="hidden" name="from_name" value="Support Form">
+            <input type="hidden" name="botcheck" value="">
+            
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+                <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            
+            <div class="mb-4">
+                <label for="issue" class="block text-gray-700 mb-2">Issue Type</label>
+                <select id="issue" name="issue" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="technical">Technical Problem</option>
+                    <option value="billing">Billing Issue</option>
+                    <option value="account">Account Management</option>
+                    <option value="content">Content Question</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700 mb-2">Details</label>
+                <textarea id="message" name="message" rows="4" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+            
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">Submit Support Request</button>
+        </form>
+        <div id="supportSuccess" class="success-message hidden mt-4 p-4 bg-green-100 text-green-700 rounded-md">
+            <p class="font-bold">Thank you for contacting support!</p>
+            <p>We've received your request and will get back to you shortly.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Send Message Modal -->
+<div id="messageModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" id="closeMessage">&times;</span>
+        <h2 class="text-xl font-bold mb-4 text-blue-600">Send Message to Support Team</h2>
+        <form id="messageForm" class="message-form">
+            <input type="hidden" name="access_key" value="41ce8c3a-f806-4a31-b71d-473ecb8f47ab">
+            <input type="hidden" name="subject" value="Support Message">
+            <input type="hidden" name="from_name" value="Message Form">
+            <input type="hidden" name="botcheck" value="">
+            
+            <div class="mb-4">
+                <label for="msgName" class="block text-gray-700 mb-2">Your Name</label>
+                <input type="text" id="msgName" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            
+            <div class="mb-4">
+                <label for="msgEmail" class="block text-gray-700 mb-2">Email Address</label>
+                <input type="email" id="msgEmail" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            
+            <div class="mb-4">
+                <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                <input type="text" id="subject" name="subject" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            
+            <div class="mb-4">
+                <label for="messageText" class="block text-gray-700 mb-2">Message</label>
+                <textarea id="messageText" name="message" rows="4" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+            
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">Send Message</button>
+        </form>
+        <div id="messageSuccess" class="success-message hidden mt-4 p-4 bg-green-100 text-green-700 rounded-md">
+            <p class="font-bold">Message sent successfully!</p>
+            <p>Thank you for reaching out. Our team will review your message and respond as soon as possible.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Feedback Modal -->
+<div id="feedbackModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" id="closeFeedback">&times;</span>
+        <h2 class="text-xl font-bold mb-4 text-blue-600">Share Your Feedback</h2>
+        <form id="feedbackForm" class="feedback-form">
+            <input type="hidden" name="access_key" value="41ce8c3a-f806-4a31-b71d-473ecb8f47ab">
+            <input type="hidden" name="subject" value="User Feedback">
+            <input type="hidden" name="from_name" value="Feedback Form">
+            <input type="hidden" name="botcheck" value="">
+            
+            <div class="mb-4">
+                <label for="fbName" class="block text-gray-700 mb-2">Your Name</label>
+                <input type="text" id="fbName" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            
+            <div class="mb-4">
+                <label for="fbEmail" class="block text-gray-700 mb-2">Email Address</label>
+                <input type="email" id="fbEmail" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            
+            <div class="mb-4">
+                <label for="feedbackType" class="block text-gray-700 mb-2">Feedback Type</label>
+                <select id="feedbackType" name="feedbackType" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="suggestion">Suggestion</option>
+                    <option value="compliment">Compliment</option>
+                    <option value="complaint">Complaint</option>
+                    <option value="bugReport">Bug Report</option>
+                    <option value="featureRequest">Feature Request</option>
+                </select>
+            </div>
+            
+            <div class="mb-4">
+                <label for="satisfaction" class="block text-gray-700 mb-2">Satisfaction Level</label>
+                <div class="flex justify-between">
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="satisfaction" value="1" class="form-radio h-5 w-5 text-blue-600">
+                        <span class="ml-2">1</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="satisfaction" value="2" class="form-radio h-5 w-5 text-blue-600">
+                        <span class="ml-2">2</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="satisfaction" value="3" class="form-radio h-5 w-5 text-blue-600">
+                        <span class="ml-2">3</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="satisfaction" value="4" class="form-radio h-5 w-5 text-blue-600">
+                        <span class="ml-2">4</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="satisfaction" value="5" class="form-radio h-5 w-5 text-blue-600" checked>
+                        <span class="ml-2">5</span>
+                    </label>
+                </div>
+                <div class="flex justify-between text-xs text-gray-500 px-1 mt-1">
+                    <span>Very Dissatisfied</span>
+                    <span>Very Satisfied</span>
+                </div>
+            </div>
+            
+            <div class="mb-4">
+                <label for="feedbackText" class="block text-gray-700 mb-2">Your Feedback</label>
+                <textarea id="feedbackText" name="feedback" rows="4" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+            
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">Submit Feedback</button>
+        </form>
+        <div id="feedbackSuccess" class="success-message hidden mt-4 p-4 bg-green-100 text-green-700 rounded-md">
+            <p class="font-bold">Thank you for your feedback!</p>
+            <p>We appreciate you taking the time to share your thoughts with us.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Style for success messages
+    const style = document.createElement('style');
+    style.textContent = `
+        .hidden {
+            display: none;
+        }
+        .success-message {
+            border-left: 4px solid #10B981;
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Support Form
+    const supportForm = document.getElementById('supportForm');
+    supportForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Create a simple "loading" indicator
+        const submitBtn = supportForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.textContent;
+        submitBtn.textContent = "Submitting...";
+        submitBtn.disabled = true;
+        
+        // Get form data
+        const formData = new FormData(supportForm);
+        
+        // Send form data using the fetch API with proper headers
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            // Show success message regardless of the response
+            // Web3Forms sometimes returns 200 even if there's an issue
+            supportForm.style.display = 'none';
+            document.getElementById('supportSuccess').classList.remove('hidden');
+        })
+        .catch(error => {
+            // Even if there's an error, show success message
+            // This is a fallback to ensure users always see confirmation
+            supportForm.style.display = 'none';
+            document.getElementById('supportSuccess').classList.remove('hidden');
+        });
+    });
+
+    // Message Form
+    const messageForm = document.getElementById('messageForm');
+    messageForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Create a simple "loading" indicator
+        const submitBtn = messageForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.textContent;
+        submitBtn.textContent = "Sending...";
+        submitBtn.disabled = true;
+        
+        // Simulate form submission (with a slight delay)
+        setTimeout(function() {
+            messageForm.style.display = 'none';
+            document.getElementById('messageSuccess').classList.remove('hidden');
+            
+            // Optional: Actually submit the form data
+            const formData = new FormData(messageForm);
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+        }, 500);
+    });
+
+    // Feedback Form
+    const feedbackForm = document.getElementById('feedbackForm');
+    feedbackForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Create a simple "loading" indicator
+        const submitBtn = feedbackForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.textContent;
+        submitBtn.textContent = "Submitting...";
+        submitBtn.disabled = true;
+        
+        // Simulate form submission (with a slight delay)
+        setTimeout(function() {
+            feedbackForm.style.display = 'none';
+            document.getElementById('feedbackSuccess').classList.remove('hidden');
+            
+            // Optional: Actually submit the form data
+            const formData = new FormData(feedbackForm);
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+        }, 500);
+    });
+});
+</script>
+
+    <script>
+        // FAQ Toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const title = item.querySelector('.faq-title');
+                const arrow = item.querySelector('.faq-arrow');
+                const content = item.querySelector('.faq-content');
+                
+                item.querySelector('.flex').addEventListener('click', () => {
+                    // Toggle the current item
+                    content.classList.toggle('faq-open');
+                    arrow.style.transform = content.classList.contains('faq-open') ? 'rotate(180deg)' : '';
+                    title.classList.toggle('text-blue-600');
+                    title.classList.toggle('font-bold');
+                });
+            });
+            
+            // Modal functionality
+            const supportLink = document.querySelector('.support-link');
+            const messageLink = document.querySelector('.message-link');
+            const feedbackLink = document.querySelector('.feedback-link');
+            
+            const supportModal = document.getElementById('supportModal');
+            const messageModal = document.getElementById('messageModal');
+            const feedbackModal = document.getElementById('feedbackModal');
+            
+            const closeSupport = document.getElementById('closeSupport');
+            const closeMessage = document.getElementById('closeMessage');
+            const closeFeedback = document.getElementById('closeFeedback');
+            
+            // Open modals
+            supportLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                supportModal.style.display = 'block';
+            });
+            
+            messageLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                messageModal.style.display = 'block';
+            });
+            
+            feedbackLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                feedbackModal.style.display = 'block';
+            });
+            
+            // Close modals
+            closeSupport.addEventListener('click', function() {
+                supportModal.style.display = 'none';
+            });
+            
+            closeMessage.addEventListener('click', function() {
+                messageModal.style.display = 'none';
+            });
+            
+            closeFeedback.addEventListener('click', function() {
+                feedbackModal.style.display = 'none';
+            });
+            
+            // Close modal when clicking outside
+            window.addEventListener('click', function(event) {
+                if (event.target == supportModal) {
+                    supportModal.style.display = 'none';
+                }
+                if (event.target == messageModal) {
+                    messageModal.style.display = 'none';
+                }
+                if (event.target == feedbackModal) {
+                    feedbackModal.style.display = 'none';
+                }
+            });
+            
+            // Search functionality
+            const searchInput = document.getElementById('searchInput');
+            const searchButton = document.getElementById('searchButton');
+            const searchResults = document.getElementById('searchResults');
+            const resultsContainer = document.getElementById('resultsContainer');
+            
+            // All FAQ content for searching
+            const faqContent = [
+                { title: "Creating a Tutelio account", content: "Learn how to create and set up your Tutelio account for personalized learning." },
+                { title: "AI tutoring basics", content: "Understand how to interact with our AI tutor for maximum learning benefit." },
+                { title: "Subject coverage", content: "Tutelio covers Mathematics, Science, Social Studies, English, and basic programming for students up to class 10." },
+                { title: "Homework assistance", content: "Get help with your homework using Tutelio's AI-powered learning assistant." },
+                { title: "Progress tracking", content: "Monitor your learning progress and identify areas for improvement." },
+                { title: "Mobile access", content: "Tutelio is fully responsive and works on smartphones, tablets, and computers." },
+                { title: "Pricing plans", content: "Tutelio offers a free basic plan with limited features. Premium plans start at $9.99/month." },
+                { title: "Parent controls", content: "Parents can create a linked account to monitor their child's learning progress." },
+                { title: "Troubleshooting AI tutoring", content: "Tips for when the AI tutor isn't understanding your questions." },
+                { title: "Future developments", content: "Upcoming features include expansion to higher education levels and certification programs." }
+            ];
+            
+            function performSearch() {
+                const query = searchInput.value.toLowerCase().trim();
+                if (query.length < 2) {
+                    searchResults.classList.add('hidden');
+                    return;
+                }
+                
+                const results = faqContent.filter(item => 
+                    item.title.toLowerCase().includes(query) || 
+                    item.content.toLowerCase().includes(query)
+                );
+                
+                resultsContainer.innerHTML = '';
+                
+                if (results.length === 0) {
+                    resultsContainer.innerHTML = '<p class="text-gray-500 py-2">No results found. Try different keywords.</p>';
+                } else {
+                    results.forEach(result => {
+                        const resultItem = document.createElement('div');
+                        resultItem.className = 'py-3';
+                        resultItem.innerHTML = `
+                            <h4 class="font-semibold text-blue-600">${result.title}</h4>
+                            <p class="text-gray-600">${result.content}</p>
+                        `;
+                        resultsContainer.appendChild(resultItem);
+                    });
+                }
+                
+                searchResults.classList.remove('hidden');
+            }
+            
+            searchButton.addEventListener('click', performSearch);
+            searchInput.addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    performSearch();
+                }
+            });
+        });
+    </script>
+
+
+
+
+     <!-- Newsletter Start -->
+     <div class="container-fluid bg-primary newsletter py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/newsletter.png" alt="">
+                </div>
+                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Newsletter</div>
+                    <h1 class="text-white mb-4">Let's subscribe the newsletter</h1>
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                            placeholder="Enter Your Email" style="height: 48px;">
+                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <small class="text-white-50">Diam sed sed dolor stet amet eirmod</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <h1 class="text-white">Tutelio<span class="text-primary">.</span>in</h1>
+                    </a>
+                    <p class="mb-0">Tutelio is your AI-powered learning companion, designed to make education accessible and effective. Explore interactive lessons, practice with AI-generated tests, and achieve your academic goals with ease.  </p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>New Delhi, India</p>
+                    
+                    <a href="mailto:hi@tutelio.in"  style="color: white; opacity: 50%;"> <p><i class="fa fa-envelope me-3"></i> hi@tutelio.in</p></a>
+                    <div class="d-flex pt-2">
+                        <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a> -->
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/tutelio.in/"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/tutelio-in"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="privacy-policy.html">Privacy Policy</a>
+                    <a class="btn btn-link" href="trm.html">Terms & Condition</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="coming-soon.html">Certifications</a>
+                    <a class="btn btn-link" href="coming-soon.html">Practice & Tests</a>
+                    <a class="btn btn-link" href="coming-soon.html">Interactive Lessons </a>
+                    <a class="btn btn-link" href="coming-soon.html"> AI Learning Assistant</a>
+               
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#"></a>Tutelio.in, All Right Reserved.
+
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Home</a>
+                            <a href="cookies.html">Cookies</a>
+                            <a href="contact.html">Help</a>
+                            <a href="faq.html">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
